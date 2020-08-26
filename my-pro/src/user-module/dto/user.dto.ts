@@ -11,6 +11,8 @@ export class UserDto {
     @IsString()
     @IsDefined()
     username: string;
+
+    Profile: string;
 }
 
 export class UserParamsDto {
