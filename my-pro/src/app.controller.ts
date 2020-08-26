@@ -9,9 +9,20 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
-
+  @Get('/get')
+  getHell(): string {
+    return this.appService.getHello();
+  }
+  @Get('/get')
+  getHe(): string {
+    return this.appService.getHello();
+  }
   @Post('/post')
   postHello(): string {
+    return this.appService.getHello();
+  }
+  @Post('/post')
+  potHello(): string {
     return this.appService.getHello();
   }
 }
