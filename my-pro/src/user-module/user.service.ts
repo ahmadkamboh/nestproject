@@ -30,6 +30,8 @@ export class UserService {
     deleteUser(email: string): User[] {
         const remainingUser = this.users.filter(i => i.email !== email);
         this.users =remainingUser;
+        console.log(remainingUser);
+        
         return remainingUser || [];
     }
 }
