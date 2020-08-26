@@ -19,7 +19,6 @@ export class UserService {
         throw new NotFoundException('user not found');
     }
 
-
     addUser(user: User): Promise<User> {
         // console.log("user", user);
          this.users.push(user);
